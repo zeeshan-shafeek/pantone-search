@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantone Color Lookup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pantone Color Lookup</h1>
+        <form method="post">
+            <input type="text" name="pantone_code" placeholder="Enter Pantone TCX code">
+            <button type="submit">Search</button>
+        </form>
+        {% if color_info %}
+            <div class="color-box" style="background-color: {{ color_info[2] }}"></div>
+            <p>Pantone Code: {{ color_info[0] }}</p>
+            <p>Color Name: {{ color_info[1] }}</p>
+            <p>Hex Value: {{ color_info[2] }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
