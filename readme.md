@@ -29,15 +29,24 @@ git clone https://github.com/zeeshan-shafeek/pantone-search
 cd flask_pantone
 ```
 
-### Step 2: Install Dependencies
-
-Install the required Python packages using `pip`:
-
-```sh
-pip install Flask pycolorname
+### Step 2: Create and Activate a Virtual Environment
+#### On Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
 ```
 
-### Step 3: Run the Flask Application
+#### On macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### Step 4: Run the Flask Application
 
 Navigate to the project directory and run the Flask application using the following command:
 
@@ -45,7 +54,7 @@ Navigate to the project directory and run the Flask application using the follow
 python app.py
 ```
 
-### Step 4: Access the Application
+### Step 5: Access the Application
 
 Open your web browser and go to `http://127.0.0.1:5000/`. 
 
