@@ -25,7 +25,7 @@ Follow these steps to set up and run the application:
 Clone this repository to your local machine using the following command:
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/zeeshan-shafeek/pantone-search
 cd flask_pantone
 ```
 
